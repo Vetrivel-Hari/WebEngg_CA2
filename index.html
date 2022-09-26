@@ -16,13 +16,23 @@
         }
     </script>
     <script src = "https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit" async defer></script>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top:-180px;
+            bottom: 0;
+            left: -100px;
+            right: 0;
+            
+            margin: auto;
+    }
+    </style>
 </head>
 <body>
-    <div>
         <div id = "divRecaptcha" class = "g-recaptcha">
-
         </div>
-        <button id = "analyze" onclick="analyze()" hidden>ANALYZE</button>
-    </div>
 </body>
 </html>
