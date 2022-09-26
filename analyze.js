@@ -7,7 +7,7 @@ function preloadFunc()
         redirect: 'follow'
       };
       
-      fetch("api.publicapis.org/entries", requestOptions)
+      fetch("https://api.publicapis.org/entries", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
