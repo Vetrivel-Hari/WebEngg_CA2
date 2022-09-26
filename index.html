@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
+    <script>
+        function onLoadCallback(){
+            grecaptcha.render('divRecaptcha', {
+                sitekey: "6LfeQS8iAAAAAPCbAQ7nlJO9PZkle9K1LggxB_1n",
+                callback: successCallBack,
 
-    <script src = "https://www.google.com/recaptcha/api.js" async defer></script>
+            });
+        }
+    </script>
+    <script src = "https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit" async defer></script>
 </head>
 <body>
     Heloo
-    <div class = "g-recaptcha" data-sitekey = "6LfeQS8iAAAAAPCbAQ7nlJO9PZkle9K1LggxB_1n">
+    <div id = "divRecaptcha" class = "g-recaptcha">
 
     </div>
 </body>
