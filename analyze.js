@@ -10,7 +10,9 @@ function preloadFunc()
       fetch("https://api.publicapis.org/entries", requestOptions)
         .then(response => response.json())
         .then(result => {
-            console.log(result)
+            entries = result[entries];
+
+            console.log(entries);
         })
         .catch(error => console.log('error', error));
 }
